@@ -202,3 +202,21 @@ table{
     border-color: #b4b4b4;
     background: #b4b4b4;
 }
+
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color: #ccddff;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .3em;
+    margin: .5em 0;
+}
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover{
+    background-color: var(--dark);
+    color: var(--border);
+}
