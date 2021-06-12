@@ -1,20 +1,32 @@
-<tr>
-    <td>1</td>
-    <td>Shivam vora</td>
-    <td>vorashivam0@gmail.com</td>
-    <td>Male</td>
-    <td>Active</td>
-    <td>
-        <a href="/update-user" class="btn border-shadow update">
-            <span class="text-gradient">
-                <i class="fas fa-user-edit"></i>
-            </span>
-        </a>
+<% for(var i=0;i<users.length;i++){ %>
+    <tr>
+        <td>
+            <%=i+1%>
+        </td>
+        <td>
+            <%=users[i].name%>
+        </td>
+        <td>
+            <%=users[i].email%>
+        </td>
+        <td>
+            <%=users[i].gender%>
+        </td>
+        <td>
+            <%=users[i].status%>
+        </td>
+        <td>
+            <a href="/update-user?id=<%=users[i].id%>" class="btn border-shadow update">
+                <span class="text-gradient">
+                    <i class="fas fa-user-edit"></i>
+                </span>
+            </a>
 
-        <a class="btn border-shadow delete">
-            <span class="text-gradient">
-                <i class="fas fa-user-times"></i>
-            </span>
-        </a>
-    </td>
-</tr>
+            <a class="btn border-shadow delete">
+                <span class="text-gradient">
+                    <i class="fas fa-user-times"></i>
+                </span>
+            </a>
+        </td>
+    </tr>
+    <%}%>
